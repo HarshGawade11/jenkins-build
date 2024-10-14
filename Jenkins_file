@@ -8,8 +8,7 @@ pipeline
     {
       steps
       {
-         sh 'echo Hello Harsh'
-         sh 'echo I am from India'
+         sh 'echo this is pipeline type job'
       }
     }
   }
