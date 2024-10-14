@@ -4,6 +4,14 @@ pipeline
 
   stages
   {
+
+    stage('SCM Checkout')
+    {
+        steps
+	{
+	   "https://github.com/HarshGawade11/jenkins-build.git"
+	}
+    }
     stage('print a message')
     {
       steps
