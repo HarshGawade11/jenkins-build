@@ -12,6 +12,13 @@ pipeline
       }
     }
 
+    stage('Validate the job')
+    {
+      steps{ }withMaven(globalMavenSettingsConfig: '', jdk: 'Jdk-home', maven: 'MVN-home', mavenSettingsConfig: '', traceability: true) 
+      { sh 'mvn validate'}
+      
+    }
+
 
     stage('print a message')
     {
